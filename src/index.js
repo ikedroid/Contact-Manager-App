@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { useState } from 'react';
+import {Provider}  from 'react-redux';
+import {createStore} from 'redux';
+import {connect} from 'react-redux';
+
 
 function AddPersonForm(props) {
   const [ person, setPerson ] = useState('');
